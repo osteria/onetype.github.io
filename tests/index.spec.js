@@ -1,9 +1,9 @@
-const expect = require('chai').expect;
-const author = require('../src/index');
+import { expect } from 'chai';
+import author from '../src/index';
 
-describe('One Type', function() {
-  it('Technical and Code Publications, by Yair', function() {
-    const actual = author();
+describe('One Type', () => {
+  it('Technical and Code Publications, by Yair', () => {
+    const actual = author('agzeri');
     const expected = '@agzeri';
 
     expect(actual).to.equal(expected);
