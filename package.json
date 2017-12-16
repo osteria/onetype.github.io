@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "precommit": "npm t",
     "lint:sass": "sass-lint --config .scss-lint.yml --verbose --no-exit",
     "test": "npm run -s lint:sass"
   },
@@ -28,6 +29,7 @@
   "homepage": "https://github.com/onetype/onetype.github.io#readme",
   "dependencies": {},
   "devDependencies": {
+    "husky": "^0.14.3",
     "node-sass": "^4.7.2",
     "sass-lint": "^1.12.1"
   }
