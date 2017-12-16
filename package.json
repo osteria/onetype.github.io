@@ -1,0 +1,34 @@
+{
+  "name": "onetype",
+  "version": "1.0.0",
+  "description": "Technical and Code Publications, by Yair.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "lint:sass": "sass-lint --config .scss-lint.yml --verbose --no-exit",
+    "test": "npm run -s lint:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onetype/onetype.github.io.git"
+  },
+  "keywords": [
+    "Technical",
+    "JavaScript",
+    "Book",
+    "Software",
+    "Computer",
+    "Science"
+  ],
+  "author": "Yair, @agzeri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onetype/onetype.github.io/issues"
+  },
+  "homepage": "https://github.com/onetype/onetype.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "sass-lint": "^1.12.1"
+  }
+}
