@@ -6,8 +6,9 @@
   "private": true,
   "scripts": {
     "precommit": "npm t",
+    "lint:js": "eslint --config .eslint.json **/*.js",
     "lint:sass": "sass-lint --config .scss-lint.yml --verbose --no-exit",
-    "test": "npm run -s lint:sass"
+    "test": "npm run -s lint:sass && npm run -s lint:js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "eslint": "^4.13.1",
     "husky": "^0.14.3",
     "node-sass": "^4.7.2",
     "sass-lint": "^1.12.1"
