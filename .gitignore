@@ -9,3 +9,7 @@ node_modules/
 
 # Coverage directory used by tools like Istanbul
 coverage/
+
+# Ruby Gems
+Gemfile
+Gemfile.lock
