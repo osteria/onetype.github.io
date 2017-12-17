@@ -6,10 +6,11 @@
   "private": true,
   "scripts": {
     "precommit": "npm t",
-    "lint:js": "eslint --config .eslint.json **/*.js",
+    "coverage": "nyc --reporter=lcov --reporter=html --reporter=text-summary",
+    "lint:js": "eslint -c .eslint.json **/**.js --quiet",
     "lint:sass": "sass-lint --config .scss-lint.yml --verbose --no-exit",
     "pretest": "npm run -s lint:sass && npm run -s lint:js",
-    "test": "mocha tests/**.spec.js --require babel-register"
+    "test": "npm run -s coverage -- mocha tests/**.spec.js --require babel-register"
   },
   "repository": {
     "type": "git",
@@ -38,7 +39,13 @@
     "husky": "^0.14.3",
     "mocha": "^4.0.1",
     "node-sass": "^4.7.2",
+    "nyc": "^11.3.0",
     "sass-lint": "^1.12.1",
     "sass-true": "^3.0.2"
+  },
+  "nyc": {
+    "exclude": [
+      "tests/"
+    ]
   }
 }
