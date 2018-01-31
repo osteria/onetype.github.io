@@ -1,0 +1,71 @@
+@charset 'utf-8';
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  font-style: normal;
+  font-weight: normal;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/caslon/adobe-caslon-pro-regular.woff2') format('woff2'),
+       url('../assets/fonts/caslon/adobe-caslon-pro-regular.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  font-style: normal;
+  font-weight: 600;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/caslon/adobe-caslon-pro-semibold.woff2') format('woff2'),
+       url('../assets/fonts/caslon/adobe-caslon-pro-semibold.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  font-style: italic;
+  font-weight: 600;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/caslon/adobe-caslon-pro-semibold-italic.woff2') format('woff2'),
+       url('../assets/fonts/caslon/adobe-caslon-pro-semibold-italic.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  font-style: italic;
+  font-weight: normal;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/caslon/adobe-caslon-pro-italic.woff2') format('woff2'),
+       url('../assets/fonts/caslon/adobe-caslon-pro-italic.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Consolas';
+  font-style: normal;
+  font-weight: normal;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/consolas/consolas.woff2') format('woff2'),
+       url('../assets/fonts/consolas/consolas.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Dejarip';
+  font-style: normal;
+  font-weight: normal;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/dejarip/dejaweb.woff2') format('woff2'),
+       url('../assets/fonts/dejarip/dejaweb.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Dejarip';
+  font-style: normal;
+  font-weight: bold;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/dejarip/dejaweb-bold.woff2') format('woff2'),
+       url('../assets/fonts/dejarip/dejaweb-bold.woff') format('woff');
+  // sass-lint:enable indentation
+}

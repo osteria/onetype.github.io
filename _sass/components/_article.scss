@@ -1,0 +1,127 @@
+@charset 'utf-8';
+
+pre,
+code {
+  font-family: 'Consolas', 'Menlo', monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0 auto;
+}
+
+.highlight {
+  .hll {
+    background-color: rgba(palette(cardinal), 0.2); // sass-lint:disable-line no-color-literals
+  }
+
+  .lineno,
+  .c1 {
+    color: rgba(palette(cardinal), 0.4); // sass-lint:disable-line no-color-literals
+  }
+}
+
+.bg-lineno {
+  background-color: rgba(palette(cardinal), 0.2); // sass-lint:disable-line no-color-literals
+}
+
+html,
+body,
+.slides,
+.slides > .slide,
+.slide > section,
+.article {
+  height: 100%;
+}
+
+.article {
+  color: palette(cardinal);
+  // font-size: calc(8px + .50vw); //14px
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 800px;
+
+  &__title {
+    display: block;
+    font-family: 'dejarip';
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+  }
+
+  &__page {
+    bottom: 20px;
+    font-family: 'dejarip';
+    font-size: 11px;
+    font-weight: 400;
+    position: absolute;
+  }
+
+  &__subtitle {
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  &__copy {
+    margin-left: 320px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+
+    @media screen and (min-width: 1336px) {
+      width: 300px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      width: 340px;
+    }
+  }
+
+  blockquote + p,
+  p + p {
+    text-indent: 20px;
+  }
+
+  blockquote {
+    border-left: 7px solid palette(vanilla-ice);
+    margin: 20px 0 20px 15px;
+
+    p {
+      font-style: italic;
+      font-weight: bold;
+      margin-left: 15px;
+      text-indent: 0;
+    }
+  }
+}
+
+.commit {
+  border-top: 2px solid palette(cararra);
+  color: palette(go-ben);
+  font-family: 'Dejarip';
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 15px;
+  padding-top: 10px;
+  text-indent: 0;
+
+  a {
+    color: palette(zeus);
+  }
+}
+
+.stop {
+  &::after {
+    background-color: rgba(palette(cardinal), 0.2); // sass-lint:disable-line no-color-literals
+    content: '';
+    display: inline-block;
+    height: 9px;
+    margin-left: 2px;
+    width: 9px;
+  }
+}
