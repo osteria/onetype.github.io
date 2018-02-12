@@ -1,0 +1,66 @@
+<meta name='hdl' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }} | An Art–Directed Publication{% endif %}' />
+<meta name='alternativeHeadline' content='{% if page.title %}{{ page.title }}{{ page.description }}{% else %}{{ site.title }}{% endif %} | An Art–Directed Publication' />
+<meta name='genre' content='Website' />
+<meta name='author' content='{{ site.author.name }}' />
+<meta name='pdate' content="{{ page.date }}" />
+<meta name='utime' content="{{ page.date }}" />
+<meta name='ptime' content="{{ page.date }}" />
+<meta name='DISPLAYDATE' content="{{ page.date | date: '%B %d, %Y'}}" />
+<meta name='dateModified' content="{{ page.date }}" />
+<meta name='dat' content="{{ page.date | date: '%B %d, %Y'}}" />
+<meta name='byl' content='By {{ site.author.name | upcase }}' />
+<meta name='keywords' content='{{ site.keywords }}' />
+<meta name='news_keywords' content='{{ site.keywords }}' />
+
+<meta itemprop='image' content='{{ site.storage | append: page.cover }}' />
+<meta name='Section' content='Blog' />
+<meta name='Subsection' content='{{ site.author.name }}' />
+<meta name='DisplayDate' content="{{ page.date | date: '%Y-%m-%d' }}" />
+<meta name='Author' content='{{ site.author.name }}' />
+
+<meta itemprop='name headline mainEntityOfPage' content='{% if page.title %}{{ page.title }}. {{ page.subtitle }}{% else %}{{ site.title }} | An Art–Directed Publication{% endif %}' />
+<meta itemprop='author' itemtype='http://schema.org/Person' content='{{ site.author.name }}' />
+<meta itemprop='description' name='description' content='{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}' />
+<meta itemprop='url' content='{{ site.url | append: page.url }}' />
+<meta itemprop='genre' content='Website' />
+<meta itemprop='inLanguage' content='en-US' />
+
+<meta name='twitter:card' content='summary_large_image' />
+<meta name='twitter:site' content='@{{ site.author.handler }}' />
+<meta name='twitter:site:id' content='169319552' />
+<meta name='twitter:creator' content='@{{ site.author.handler }}' />
+<meta name='twitter:creator:id' content='169319552' />
+<meta name='twitter:title' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }} | An Art–Directed Publication{% endif %}' />
+<meta name='twitter:description' content='{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}' />
+<meta name='twitter:image' content='{{ site.storage | append: page.cover }}' />
+<meta name='twitter:image:alt' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} Main Image' />
+<meta name='twitter:domain' content='{{ site.url }}' />
+
+<meta property='og:url' content='{{ site.url | append: page.url }}' />
+<meta property='og:type' content='article' />
+<meta property='og:title' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }} | An Art–Directed Publication{% endif %}' />
+<meta property='og:description' content='{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}' />
+<meta property='og:image' content='{{ site.storage | append: page.cover }}' />
+<meta property='og:image:secure_url' content='{{ site.storage | append: page.cover }}' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='700' />
+<meta property='article:author' content='{{ site.author.name }}' />
+<meta property='article:publisher' content='http://facebook.com/{{ site.author.handler }}' />
+<meta property='article:published_time' itemprop='datePublished' content="{{ page.date }}" />
+<meta property='article:modified_time' itemprop='dateModified' content="{{ page.date }}" />
+<meta property='article:section' content='Article' />
+<meta property='article:tag' content='{{ page.keywords }}' />
+<meta property='fb:admins' content='100001118537951' />
+<meta property='fb:profile_id' content='100001118537951' />
+<meta property='fb:pages' content='1813787172230717' />
+<meta property='og:updated_time' content='{{ page.date }}' />
+<meta property='og:locale' content='en_US' />
+<meta property='og:locale:alternative' content='es_MX' />
+<meta property='og:locale:alternative' content='es_ES' />
+<meta property='og:site_name' content='{{ site.title }}' />
+
+<meta name='robots' content='index, follow' />
+<link rel='canonical' href='{{ site.url | append: page.url }}' />
+<link rel='author' href='https://plus.google.com/+agzeri' />
+<link rel='publisher' href='https://plus.google.com/+agzeri' />
+<meta name='google-site-verification' content='' />
