@@ -25,9 +25,9 @@ code {
 
 html,
 body,
-.slides,
-.slides > .slide,
-.slide > section,
+.book,
+.book > .page,
+.page > section,
 .article {
   height: 100%;
 }
